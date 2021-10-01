@@ -1,0 +1,1 @@
+Just a node12 open faas template

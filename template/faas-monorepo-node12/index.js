@@ -91,7 +91,6 @@ class FunctionContext {
 }
 
 const middleware = async (req, res) => {
-  console.log('---- Update: ', req);
   const cb = (err, functionResult) => {
     if (err) {
       console.error(err);

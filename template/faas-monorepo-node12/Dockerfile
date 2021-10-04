@@ -37,7 +37,7 @@ WORKDIR /home/app/function
 COPY function/*.json ./
 COPY function/packages/ ./packages
 
-RUN yarn install --frozen-lock-file
+RUN yarn install
 
 # COPY function files and folders
 COPY function/ ./

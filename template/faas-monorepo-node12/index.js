@@ -11,6 +11,7 @@ const handler = require('./function/handler');
 const defaultMaxSize = '100kb'; // body-parser default
 
 app.disable('x-powered-by');
+app.use(express.static(path.join(__dirname, 'public'))); //  "public" off of current is root
 
 const rawLimit = process.env.MAX_RAW_SIZE || defaultMaxSize;
 const jsonLimit = process.env.MAX_JSON_SIZE || defaultMaxSize;

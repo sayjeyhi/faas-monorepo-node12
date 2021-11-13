@@ -3,6 +3,7 @@
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 const express = require('express');
+var path = require('path');
 
 const app = express();
 const bodyParser = require('body-parser');
